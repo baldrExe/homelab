@@ -1,40 +1,20 @@
 {
   "main": {
-    "id": "298659e60f4097da",
+    "id": "3705b6965c295dd7",
     "type": "split",
     "children": [
       {
-        "id": "d4593451a871e035",
+        "id": "e87fe0ba407b4b7f",
         "type": "tabs",
         "children": [
           {
-            "id": "db1dc801033ce612",
+            "id": "1b7dc43d5f281d03",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bienvenue.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Bienvenue"
-            }
-          }
-        ]
-      },
-      {
-        "id": "f24433f35d56912e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0515afef817b6100",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vue graphique"
+              "icon": "lucide-file",
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -43,15 +23,16 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0a74a581e3947d3e",
+    "id": "3d6e66f766e97971",
     "type": "split",
     "children": [
       {
-        "id": "5465be89591618e6",
+        "id": "fc9bbdab8bf48161",
         "type": "tabs",
+        "dimension": 73.83246849518162,
         "children": [
           {
-            "id": "8c5e15ee10da9cb0",
+            "id": "9a6dfac22fe899f0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -64,12 +45,12 @@
             }
           },
           {
-            "id": "ab95c53d02ddc049",
+            "id": "e050a86fe0febedf",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#mvp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +62,7 @@
             }
           },
           {
-            "id": "d6f86f52f07d4be5",
+            "id": "9c32fc9d855445f1",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -91,26 +72,43 @@
             }
           }
         ]
+      },
+      {
+        "id": "736f7d0ef60e3fb5",
+        "type": "tabs",
+        "dimension": 26.167531504818385,
+        "children": [
+          {
+            "id": "fc0decb53bfead37",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vue graphique"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "3119a5cd26aa858c",
+    "id": "ce22e7ad672231e2",
     "type": "split",
     "children": [
       {
-        "id": "a5bcf6c9c723ada8",
+        "id": "94d884d48a8c96da",
         "type": "tabs",
+        "dimension": 72.84482758620689,
         "children": [
           {
-            "id": "3c67e7714b4409e3",
+            "id": "54d19c55496635ed",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bienvenue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,25 +118,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Bienvenue"
+              "title": "Rétroliens"
             }
           },
           {
-            "id": "f44211411ecaa93c",
+            "id": "71d5b84a7b5c2723",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bienvenue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de Bienvenue"
+              "title": "Liens sortants"
             }
           },
           {
-            "id": "f9907c4431038b4c",
+            "id": "5898c8ea6b189ec8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -153,7 +150,7 @@
             }
           },
           {
-            "id": "161f6120cc923b3f",
+            "id": "318978e11ea827e1",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -167,67 +164,96 @@
             }
           },
           {
-            "id": "6f463f2500a41021",
+            "id": "381f0aeeb9c9e43e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bienvenue.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de Bienvenue"
+              "title": "Plan"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "3b5f273338109e78",
+        "type": "tabs",
+        "dimension": 27.155172413793103,
+        "children": [
+          {
+            "id": "003443c54fadc639",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 299.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "omnisearch:Omnisearch": false,
+      "obsidian-importer:Open Importer": false,
+      "bases:Créer une nouvelle base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
-      "bases:Créer une nouvelle base": false
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8c5e15ee10da9cb0",
+  "active": "9a6dfac22fe899f0",
   "lastOpenFiles": [
-    "profile-readme/README.md",
-    "profile-readme",
-    "cybersec-notes/tryhackme/splunk/README.md",
-    "cybersec-notes/tryhackme/networking/README.md",
-    "cybersec-notes/tryhackme/linux-fundamentals/README.md",
-    "cybersec-notes/tryhackme/active-directory/README.md",
-    "cybersec-notes/{tryhackme/{linux-fundamentals,networking,active-directory,splunk},tools,writeups-retired,docs}",
-    "cybersec-notes/tryhackme/splunk",
-    "cybersec-notes/tryhackme/networking",
-    "cybersec-notes/tryhackme/linux-fundamentals",
-    "cybersec-notes/tryhackme/active-directory",
-    "cybersec-notes/tools/README.md",
-    "cybersec-notes/docs/learnings.md",
-    "cybersec-notes/{tryhackme",
-    "cybersec-notes/writeups-retired",
-    "cybersec-notes/tryhackme",
-    "cybersec-notes/tools",
-    "cybersec-notes/README.md",
-    "network-lab/subnetting/README.md",
-    "network-lab/docs/learnings.md",
-    "network-lab/protocols/README.md",
-    "network-lab/README.md",
-    "azure-lab/docs/learnings.md",
-    "azure-lab/03-nsg-firewall/README.md",
-    "azure-lab/02-vm-deployment/README.md",
-    "azure-lab/01-vnet-basics/README.md",
-    "azure-lab/README.md",
-    "Bienvenue.md"
+    "README.md",
+    "02 Logiciel SaaS Autocar/Pour Papa — Pourquoi une Web App.md",
+    "01 Perso/Spartan Race Verbier 2026 — Programme 22 semaines.md",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev/10 - Ce qui reste à faire.md",
+    "+/Nouveau Document texte.txt",
+    "+",
+    "00 Cours/Module 117.md",
+    "Sans titre 4",
+    "Sans titre 3",
+    "Sans titre 2",
+    "Sans titre 1",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev/01 - Analyse Access & Schéma DB.md",
+    "02 Logiciel SaaS Autocar/Synthèse des vidéos - Logiciel actuel (Access).md",
+    "x",
+    "conflict-files-obsidian-git.md",
+    "01 Perso/Eczéma Atopique — Guide Personnel.md",
+    "00 Cours",
+    "01 Perso/Eczéma Atopique — Liste d'achats.md",
+    "Fiche Obsidian — commandes et markdown.md",
+    "01 Perso",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev/04 - Stack technique & Architecture.md",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev/02 - Migration Access → MariaDB.md",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev/00 - Index.md",
+    "Logiel SaaS autocar/Phase 1 - Données & Migration (Access to MariaDB).md",
+    "Logiel SaaS autocar/Phase 0 - Cadrage & Audit.md",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev/08 - Réglementation LDT & OTR.md",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev/03 - Schéma cbus_app complet.md",
+    "02 Logiciel SaaS Autocar/CBus SaaS - Migration & Dev",
+    "Logiel SaaS autocar/Rendu/Phase 1 - Procédure & scripts (Access → MariaDB).md",
+    "01 Perso/Appartements/Suivi appartements contactés.md",
+    "Logiel SaaS autocar/V1 - Exploitation (MVP).md",
+    "Logiel SaaS autocar/Roadmap - Logiciel SaaS Autocar.md",
+    "Logiel SaaS autocar/Phase 2 - MVP Produit.md",
+    "Logiel SaaS autocar/Phase 3 - Industrialisation & Sécurité.md",
+    "Logiel SaaS autocar/Phase 4 - Déploiement & Exploitation.md",
+    "Logiel SaaS autocar/Phase 5 - Améliorations & Automatisations.md",
+    "Budget/Sans titre.canvas",
+    "Sans titre.canvas"
   ]
 }

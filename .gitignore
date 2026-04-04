@@ -1,0 +1,15 @@
+# Fichiers de session Obsidian (propres à chaque machine)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Cache et fichiers temporaires
+.obsidian/cache
+.trash/
+*.tmp
+
+# Si tu utilises des plugins avec données locales
+.obsidian/plugins/obsidian-git/data.json
+.obsidian/plugins/obsidian-icon-folder/data.json
+.obsidian/app.json
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

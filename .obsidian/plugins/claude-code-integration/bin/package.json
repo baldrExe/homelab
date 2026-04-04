@@ -1,0 +1,8 @@
+{
+  "name": "obsidian-claude-code-acp-cache",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@zed-industries/claude-code-acp": "0.13.1"
+  }
+}

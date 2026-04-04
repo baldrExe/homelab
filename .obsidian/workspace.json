@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e87fe0ba407b4b7f",
+        "id": "c69275445b79be9e",
         "type": "tabs",
         "children": [
           {
-            "id": "1b7dc43d5f281d03",
+            "id": "5e532e588d6a02ee",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -203,8 +203,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "omnisearch:Omnisearch": false,
-      "obsidian-importer:Open Importer": false,
       "bases:Créer une nouvelle base": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
@@ -212,7 +210,8 @@
       "templates:Insérer le modèle": false,
       "command-palette:Ouvrir la palette de commandes": false,
       "daily-notes:Ouvrir la note quotidienne": false,
-      "obsidian-git:Open Git source control": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-importer:Open Importer": false
     }
   },
   "active": "9a6dfac22fe899f0",

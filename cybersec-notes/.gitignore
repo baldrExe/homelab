@@ -1,0 +1,11 @@
+# Ne jamais commiter
+*.pcap              # Captures réseau (peuvent contenir des données sensibles)
+*.cap
+credentials.txt
+passwords.txt
+*.key
+.env
+
+# OS
+.DS_Store
+Thumbs.db

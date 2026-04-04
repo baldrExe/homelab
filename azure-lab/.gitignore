@@ -1,0 +1,16 @@
+# Credentials et secrets — ne JAMAIS commiter
+.env
+*.pem
+*.key
+*credentials*
+*secret*
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# OS
+.DS_Store
+Thumbs.db

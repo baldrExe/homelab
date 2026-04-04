@@ -1,0 +1,6 @@
+# Fichiers Packet Tracer (trop lourds, exporte en PNG plutôt)
+*.pkt
+
+# OS
+.DS_Store
+Thumbs.db

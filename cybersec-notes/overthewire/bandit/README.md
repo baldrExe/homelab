@@ -7,88 +7,86 @@ Mot de passe du level N = trouvé au level N-1.
 ---
 
 ## Level 0 → 1
-**Objectif :** lire le fichier `readme` dans le home
 ```bash
+ssh -p 2220 bandit0@bandit.labs.overthewire.org
 cat readme
+# password : ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
 
 ---
 
 ## Level 1 → 2
-**Objectif :** lire un fichier nommé `-`
 ```bash
-cat ./-
+ssh -p 2220 bandit1@bandit.labs.overthewire.org
+cat < -
+# password : 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
-
-**Pourquoi `./-` ?**
+**Pourquoi `< -` ?**
 Le `-` est interprété comme argument par le terminal.
-`./` force la lecture comme fichier.
+La redirection `<` force la lecture comme fichier.
 
 ---
 
 ## Level 2 → 3
-**Objectif :** lire un fichier avec des espaces dans le nom
 ```bash
-cat "spaces in this filename"
-# ou
-cat spaces\ in\ this\ filename
-# ou Tab pour autocomplétion
+ssh -p 2220 bandit2@bandit.labs.overthewire.org
+cat < "--spaces in the filename--"
+# password : MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 ```
 
 ---
 
 ## Level 3 → 4
-**Objectif :** lire un fichier caché
 ```bash
-ls -la        # affiche les fichiers cachés (commençant par .)
-cat .hidden
+ssh -p 2220 bandit3@bandit.labs.overthewire.org
+cat < ...Hiding-From-You
+# password : 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 ```
+**À retenir :** `ls -la` pour voir les fichiers cachés.
 
 ---
 
 ## Level 4 → 5
-**Objectif :** trouver le seul fichier human-readable parmi plusieurs
 ```bash
-file ./*      # détecte le type de chaque fichier
-              # chercher "ASCII text"
-cat ./-file07 # lire le bon fichier
+ssh -p 2220 bandit4@bandit.labs.overthewire.org
+file ./*          # identifier le fichier ASCII text
+cat ./-file07
+# password : 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 ```
-
-**À retenir :** utiliser `file` avant `cat` quand on ne sait
-pas quel fichier lire.
+**À retenir :** `file` avant `cat` pour identifier le type.
 
 ---
 
 ## Level 5 → 6
-**Objectif :** fichier human-readable, 1033 bytes, non exécutable
 ```bash
+ssh -p 2220 bandit5@bandit.labs.overthewire.org
 find . -type f -size 1033c ! -executable
 cat ./maybehere07/.file2
+# password : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 ```
-
 **Explications find :**
-- `.`           → dossier actuel et sous-dossiers
-- `-type f`     → fichiers uniquement
-- `-size 1033c` → exactement 1033 bytes (c = bytes)
-- `!`           → NOT, inverse la condition suivante
-- `-executable` → fichier exécutable
+- `.`            → dossier actuel et sous-dossiers
+- `-type f`      → fichiers uniquement
+- `-size 1033c`  → exactement 1033 bytes
+- `!`            → NOT, inverse la condition suivante
+- `-executable`  → fichier exécutable
 
 ---
 
 ## Level 6 → 7
-**Objectif :** fichier somewhere on the server,
-owned by bandit7, group bandit6, 33 bytes
 ```bash
+ssh -p 2220 bandit6@bandit.labs.overthewire.org
 find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
 cat /var/lib/dpkg/info/bandit7.password
+# password : morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 ```
-
 **Explications :**
-- `/`          → racine = tout le serveur
-- `-user`      → appartient à cet utilisateur
-- `-group`     → appartient à ce groupe
-- `2>/dev/null`→ cache les erreurs "Permission denied"
+- `/`            → racine = tout le serveur
+- `-user`        → appartient à cet utilisateur
+- `-group`       → appartient à ce groupe
+- `2>/dev/null`  → cache les erreurs Permission denied
 
-**Règle chemin :**
-- `./chemin` → chemin relatif (depuis où tu es)
-- `/chemin`  → chemin absolu (depuis la racine, toujours)
+---
+
+## Level 7 → 8
+⏳ En cours...

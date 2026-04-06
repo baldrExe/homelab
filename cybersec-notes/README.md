@@ -1,39 +1,20 @@
-# Cybersec Notes — TryHackMe & Pratique Sécurité
+## Progression Bandit
 
-Notes personnelles de mon apprentissage en cybersécurité,
-basées sur TryHackMe et d'autres ressources pratiques.
+| Level | Statut | Concept clé |
+|-------|--------|-------------|
+| 0 → 1 | ✅ | cat, ssh |
+| 1 → 2 | ✅ | fichiers commençant par - |
+| 2 → 3 | ✅ | espaces dans les noms de fichiers |
+| 3 → 4 | ✅ | fichiers cachés |
+| 4 → 5 | ✅ | commande file |
+| 5 → 6 | ✅ | find avec critères |
+| 6 → 7 | ✅ | find sur tout le serveur |
+| 7 → 8 | ⏳ | — |
 
-> ⚠️ Pas de write-ups de rooms actives TryHackMe (politique THM).
-> Les write-ups dans ce repo concernent uniquement les
-> machines retirées HackTheBox ou les CTF terminés.
+## Profil OverTheWire
 
-## Profil TryHackMe
-
-🔗 [tryhackme.com/p/tonusername](https://tryhackme.com/p/tonusername)
-
-## Progression THM
-
-| Learning Path | Progression | Notes |
-|---------------|-------------|-------|
-| Pre-Security | ░░░░░░░░░░ 0% | — |
-| Jr Penetration Tester | ░░░░░░░░░░ 0% | — |
-| SOC Level 1 | ░░░░░░░░░░ 0% | — |
-
-## Structure
-
-```
-cybersec-notes/
-├── tryhackme/
-│   ├── linux-fundamentals/   ← commandes, concepts Linux
-│   ├── networking/           ← réseau appliqué à la sécu
-│   ├── active-directory/     ← AD, authentification Windows
-│   └── splunk/               ← SIEM, analyse de logs
-├── tools/                    ← référence des outils courants
-├── writeups-retired/         ← machines HTB retirées uniquement
-└── docs/
-    └── learnings.md          ← journal d'apprentissage
-```
+🔗 [overthewire.org](https://overthewire.org/wargames/bandit)
 
 ## Outils couverts
 
-`nmap` · `gobuster` · `hydra` · `netcat` · `wireshark` · `splunk` · `burpsuite`
+`nmap` · `gobuster` · `hydra` · `netcat` · `wireshark` · `find` · `grep`

@@ -9,4 +9,4 @@ en parallèle de mon apprentissage ICT en Suisse.
 |---------|-------------|
 | [azure-lab](./azure-lab/) | Labs pratiques Azure (AZ-900 → AZ-104) |
 | [network-lab](./network-lab/) | Réseau et subnetting (Network+) |
-| [cybersec-notes](./cybersec-notes/) | TryHackMe, outils sécurité |
+| [cybersec-notes](./cybersec-notes/) | OverTheWire Bandit, outils sécurité |

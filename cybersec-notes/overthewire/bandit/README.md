@@ -143,11 +143,12 @@ base64 -d data.txt
 
 À retenir :
 * `base64` → encode du binaire en texte pur (lettres + chiffres + `+/=`)
-* Par défaut il **encode** — utiliser `-d` pour **décoder**
+* `-d` → **décoder** — sans cette option, la commande **encode** par défaut
 
 ---
-
 ## level 11 → 12
 ```bash
 ssh -p 2220 bandit11@bandit.labs.overthewire.org
+
+
 ```

@@ -125,4 +125,10 @@ toujours `sort` avant `uniq`.
 ---
 
 ## Level 9 → 10
-⏳ En cours...
+```bash
+ssh -p 2220 bandit9@bandit.labs.overthewire.org
+strings data.txt | grep =
+# password : FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+```
+
+À retenir : `strings` extrait les séquences de caractères lisibles d'un fichier binaire/mixte. Combiner avec `grep` pour filtrer sur un pattern précis.

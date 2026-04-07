@@ -161,3 +161,29 @@ cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'
 * ROT13 = décalage de 13 positions → `a-z` devient `n-za-m` (13+13 pour boucler l'alphabet)
 ---
 
+## Level 12 → 13
+```bash
+ssh -p 2220 bandit12@bandit.labs.overthewire.org
+mktemp -d
+cp ~/data.txt /tmp/tmp.isaSv3LKv9/
+cd /tmp/tmp.isaSv3LKv9
+xxd -r data.txt > data2
+# Répéter : file → renommer → décompresser jusqu'à ASCII text
+mv data2 data2.gz && gzip -d data2.gz
+mv data2 data2.bz2 && bzip2 -d data2.bz2
+tar -xf data2
+tar -xf data5.bin
+mv data6.bin data6.bz2 && bzip2 -d data6.bz2
+tar -xf data6
+mv data8.bin data8.gz && gzip -d data8.gz
+cat data8
+# password : FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
+```
+
+À retenir :
+* `xxd -r` → convertit un hexdump en binaire
+* `file` → à utiliser à chaque étape pour identifier le type de compression
+* `gzip -d` / `bzip2 -d` → décompresser (sans `-d` = compresse)
+* `tar -xf` → extrait une archive tar
+* Les outils de compression sont souvent **chaînés** — toujours `file` après chaque décompression

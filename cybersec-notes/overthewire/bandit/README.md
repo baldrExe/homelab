@@ -106,7 +106,6 @@ grep "millionth" data.txt
 **À retenir :** `grep "mot" fichier` pour trouver une ligne contenant un mot précis.
 
 ---
-
 ## Level 8 → 9
 ```bash
 ssh -p 2220 bandit8@bandit.labs.overthewire.org
@@ -123,7 +122,6 @@ sort data.txt | uniq -u
 toujours `sort` avant `uniq`.
 
 ---
-
 ## Level 9 → 10
 ```bash
 ssh -p 2220 bandit9@bandit.labs.overthewire.org
@@ -146,9 +144,15 @@ base64 -d data.txt
 * `-d` → **décoder** — sans cette option, la commande **encode** par défaut
 
 ---
-## level 11 → 12
+## Level 11 → 12
 ```bash
 ssh -p 2220 bandit11@bandit.labs.overthewire.org
-
-
+cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'
+# password : 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
 ```
+
+À retenir :
+* `tr 'SET1' 'SET2'` → remplace chaque caractère de SET1 par le caractère à la même position dans SET2
+* Les deux sets doivent avoir la **même longueur**
+* ROT13 = décalage de 13 positions → `a-z` devient `n-za-m` (13+13 pour boucler l'alphabet)
+---

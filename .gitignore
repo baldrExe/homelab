@@ -13,3 +13,7 @@
 .obsidian/app.json
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+
+.vagrant/
+*.log
+*.iso
